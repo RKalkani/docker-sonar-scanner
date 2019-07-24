@@ -3,7 +3,7 @@ docker-sonar-scanner
 
 [![pulls][docker hub svg]][docker hub]
 
-The docker image with sonar scanner binary to analyze your project.
+The docker image with sonar scanner 4.0.0 binary to analyze your project.
 
 Using it in your gitlab projects
 ----------------------------------
