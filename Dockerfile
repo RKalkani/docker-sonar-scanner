@@ -11,6 +11,8 @@ RUN \
     tar --strip-components=1 -xvf node-v${NODEJS_VERSION}-linux-x64.tar.xz && \
     rm node-v${NODEJS_VERSION}-linux-x64.tar.xz
 
+RUN npm install -g typescript
+
 RUN \
     cd /var/opt && \
     curl https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip --output /var/opt/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
